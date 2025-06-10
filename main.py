@@ -1,10 +1,16 @@
 from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
-from replit import auth
 from datetime import datetime
 import json
 import requests
 import os
+
+# Handle replit auth import with fallback
+try:
+    from replit import auth
+    REPLIT_AUTH_AVAILABLE = True
+except ImportError:
+    REPLIT_AUTH_AVAILABLE = False
 
 app = Flask(__name__)
 CORS(app)
@@ -36,8 +42,14 @@ def home():
 
 @app.route('/ask', methods=['POST'])
 def ask():
-    user = auth.get_user()
-    username = user['username']
+    if REPLIT_AUTH_AVAILABLE:
+        try:
+            user = auth.get_user()
+            username = user['username']
+        except:
+            username = "anonymous"
+    else:
+        username = "anonymous"
     print(f"🔐 User asking: {username}")
 
     data = request.get_json()
@@ -72,8 +84,14 @@ def ask():
 
 @app.route("/history")
 def get_history():
-    user = auth.get_user()
-    username = user['username']
+    if REPLIT_AUTH_AVAILABLE:
+        try:
+            user = auth.get_user()
+            username = user['username']
+        except:
+            username = "anonymous"
+    else:
+        username = "anonymous"
     filename = f"chats/{username}.json"
 
     if os.path.exists(filename):
