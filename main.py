@@ -16,29 +16,40 @@ app = Flask(__name__)
 CORS(app)
 
 # Hugging Face model endpoint
-headers = {
-    "Authorization": f"Bearer {os.environ.get('HF_TOKEN')}"
-}
+headers = {"Authorization": f"Bearer {os.environ.get('HF_TOKEN')}"}
+
 
 def ask_code_mentor(prompt, model_name):
     payload = {
         "inputs": f"<|user|>\n{prompt}\n<|assistant|>\n",
-        "options": {"wait_for_model": True}
+        "options": {
+            "wait_for_model": True
+        }
     }
 
     model_url = f"https://api-inference.huggingface.co/models/{model_name}"
 
+    # DEBUG LOGGING
+    print(f"📡 Request to: {model_url}")
+    print(f"📤 Headers: {headers}")
+    print(f"📄 Payload: {payload}")
+
     response = requests.post(model_url, headers=headers, json=payload)
+
+    print("🔽 Status Code:", response.status_code)
+    print("🧾 Response Text:", response.text)
+
     try:
         return response.json()[0]['generated_text']
     except Exception as e:
-        print("❌ ERROR:", e)
-        print("⚠️ Response text:", response.text)
+        print("❌ ERROR parsing response:", e)
         return "❌ AI failed to respond. Check backend logs or HuggingFace token."
+
 
 @app.route("/")
 def home():
     return render_template("test.html")
+
 
 @app.route('/ask', methods=['POST'])
 def ask():
@@ -82,6 +93,7 @@ def ask():
 
     return jsonify({"answer": answer})
 
+
 @app.route("/history")
 def get_history():
     if REPLIT_AUTH_AVAILABLE:
@@ -102,7 +114,13 @@ def get_history():
 
     return jsonify({"history": chats})
 
+
 if __name__ == "__main__":
     print("✅ Testing AI backend...")
-    print(ask_code_mentor("def greet(name): print('Hello ' + name)", "HuggingFaceH4/zephyr-7b-beta"))
-    app.run(host="0.0.0.0", port=5000)
+    print(
+        ask_code_mentor("def greet(name): print('Hello ' + name)",
+                        "HuggingFaceH4/zephyr-7b-beta"))
+import os
+port = int(os.environ.get("PORT", 5000))
+app.run(host="0.0.0.0", port=port)
+

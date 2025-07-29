@@ -1,0 +1,202 @@
+[
+  {
+    "timestamp": "2025-06-10T19:05:25.466719",
+    "question": "def greet(name):\n    print('Hello ' + name)\ngreet('John')\n  ",
+    "answer": "<|user|>\ndef greet(name):\n    print('Hello ' + name)\ngreet('John')\n  \n<|assistant|>\nThe provided code defines a function called `greet` that takes a parameter `name`. Inside the function, the string \"Hello \" is concatenated with the value of the `name` parameter and assigned to a variable named `message`. The `print` function is then called with `message` as the argument to display the message on the console.\n\nOutside the function, the function is called with an argument of \"John\". When the function is called, the assignment statement inside the function is executed with `name` replaced by \"John\", and the string \"Hello John\" is passed to the `print` function as an argument. This outputs \"Hello John\" to the console."
+  },
+  {
+    "timestamp": "2025-06-10T19:07:07.765385",
+    "question": "def greet(name):\n    print('Hello ' + name)\ngreet('John')\n  ",
+    "answer": "<|user|>\ndef greet(name):\n    print('Hello ' + name)\ngreet('John')\n  \n<|assistant|>\nThis is a simple Python function called `greet` that accepts a parameter named `name`. Inside the function, we concatenate the string 'Hello' and the value of the `name` parameter, and then print the result using the `print` function. In the main code block, we call the `greet` function with an argument 'John'. This would invoke the `greet` function and print 'Hello John' as the output."
+  },
+  {
+    "timestamp": "2025-06-10T19:19:04.366388",
+    "question": "def greet(name):\n    print('Hello ' + name)\ngreet('John')\n  ",
+    "answer": "<|user|>\ndef greet(name):\n    print('Hello ' + name)\ngreet('John')\n  \n<|assistant|>\nThis is a simple function in Python called `greet()` that takes a parameter named `name` and prints a greeting message that includes the value of `name`. \n\nWhen we call this function with the argument `'John'`, it passes the value `'John'` to the `name` parameter, and the function prints out the resulting greeting message: `'Hello John'`. If you want to greet someone else, you can call the function again with a different argument, such as `'Sarah'`.\n\nHere's an example:\n```python\ndef greet(name):\n    print('Hello ' + name)\ngreet('John')   # Output: \"Hello John\"\ngreet('Sarah')  # Output: \"Hello Sarah\"\n```\n"
+  },
+  {
+    "timestamp": "2025-06-10T19:24:57.938145",
+    "question": "def greet(name):\n    print('Hello ' + name)\ngreet('John')\n  ",
+    "answer": "\u274c AI failed to respond. Check backend logs or HuggingFace token."
+  },
+  {
+    "timestamp": "2025-06-10T19:27:19.920096",
+    "question": "def greet(name):\n    print('Hello ' + name)\ngreet('John')\n  ",
+    "answer": "\u274c AI failed to respond. Check backend logs or HuggingFace token."
+  },
+  {
+    "timestamp": "2025-06-10T19:32:04.734713",
+    "question": "def greet(name):\n    print('Hello ' + name)\ngreet('John')\n  ",
+    "answer": "\u274c AI failed to respond. Check backend logs or HuggingFace token."
+  },
+  {
+    "timestamp": "2025-06-12T07:18:20.129065",
+    "question": "def greet(name):\n    print('Hello ' + name)\ngreet('John')\n  ",
+    "answer": "\u274c AI failed to respond. Check backend logs or HuggingFace token."
+  },
+  {
+    "timestamp": "2025-06-12T07:23:29.721306",
+    "question": "def greet(name):\n    print('Hello ' + name)\ngreet('John')\n  ",
+    "answer": "\u274c AI failed to respond. Check backend logs or HuggingFace token."
+  },
+  {
+    "timestamp": "2025-06-12T07:35:35.672077",
+    "question": "def greet(name):\n    print('Hello ' + name)\ngreet('John')\n  ",
+    "answer": "<|user|>\ndef greet(name):\n    print('Hello ' + name)\ngreet('John')\n  \n<|assistant|>\nThis is a basic function definition and function call in Python. The name of the function is `greet` and it takes an argument named `name`. Inside the function, the value of the `name` argument is printed to the console with a greeting message using string concatenation. To execute the function, you call it with a value for the `name` argument, as seen in the second line of code. In this example, the function is called with the string 'John' passed as an argument, but you can replace 'John' with any other string name."
+  },
+  {
+    "timestamp": "2025-06-12T09:45:10.174998",
+    "question": "def greet(name):\n    print('Hello ' + name)\ngreet('John')\n  ",
+    "answer": "<|user|>\ndef greet(name):\n    print('Hello ' + name)\ngreet('John')\n  \n<|assistant|>\nHere's an explanation of what's happening in this code:\n\n1. We're defining a function called `greet` that takes a single argument called `name`.\n2. Inside the `greet` function, we're printing a string that concatenates the value of `name` with the text 'Hello'.\n3. We're calling the `greet` function, passing the argument `'John'` to it.\n4. The result of calling the `greet` function is the printed message 'Hello John'.\n\nOverall, this code demonstrates the basic syntax for defining and calling a simple function in Python."
+  },
+  {
+    "timestamp": "2025-06-12T09:50:09.879550",
+    "question": "def greet(name):\n    print('Hello ' + name)\ngreet('John')\n  ",
+    "answer": "<|user|>\ndef greet(name):\n    print('Hello ' + name)\ngreet('John')\n  \n<|assistant|>\nThis is a simple Python function named `greet` that takes in one argument `name`. Inside the function, the string \"Hello \" is concatenated with the `name` argument and then printed using the `print()` function. In the main block of the program, the function is called with the Argument 'John'. When the program is run, the function will print out \"Hello John\" in the console."
+  },
+  {
+    "timestamp": "2025-06-12T09:56:21.633531",
+    "question": "def greet(name):\n    print('Hello ' + name)\ngreet('John')\n  ",
+    "answer": "<|user|>\ndef greet(name):\n    print('Hello ' + name)\ngreet('John')\n  \n<|assistant|>\nThe code snippet provided is a simple Python function called `greet()` that takes a parameter `name` and prints a greeting message to the console using string concatenation, where the value of `name` is added in-between the quotes after the 'Hello' message. The function is then called with a value of 'John' as an argument, passing the value to the function's `name` parameter. When the function is executed, it prints the greeting message with 'John' in place of the `name` parameter."
+  },
+  {
+    "timestamp": "2025-06-12T09:58:38.844526",
+    "question": "def greet(name):\n    print('Hello ' + name)\ngreet('John')\n  ",
+    "answer": "<|user|>\ndef greet(name):\n    print('Hello ' + name)\ngreet('John')\n  \n<|assistant|>\nThe above code is a simple function in Python called `greet()` that takes a single argument `name`. Inside the function, the string \"Hello \" is concatenated with the value passed to the `name` argument, and the result is printed using the `print()` function. \n\nTo call or execute the function, we simply need to pass a value to the `name` argument, and the function will print the corresponding greeting message with the provided name. In this example, we passed the string \"John\" as the value for `name`.\n\nThe output of the code will be:\n\n```\nHello John\n```"
+  },
+  {
+    "timestamp": "2025-06-12T10:14:28.385748",
+    "question": "def greet(name):\n    print('Hello ' + name)\ngreet('John')\n  ",
+    "answer": "<|user|>\ndef greet(name):\n    print('Hello ' + name)\ngreet('John')\n  \n<|assistant|>\nThis is a simple Python function called `greet` that takes a parameter `name` and prints a greeting message with that name using the `print()` function. To use this function, you call it with an argument, such as `'John'` in this example."
+  },
+  {
+    "timestamp": "2025-06-12T10:26:43.994434",
+    "question": "def greet(name):\n    print('Hello ' + name)\ngreet('John')\n  ",
+    "answer": "<|user|>\ndef greet(name):\n    print('Hello ' + name)\ngreet('John')\n  \n<|assistant|>\nThis is a basic Python function definition called `greet`. It takes a single argument `name` and prints a greeting message that includes the provided name. The syntax is as follows:\n\n```python\ndef function_name(arguments):\n    function_body\n```\n\nIn this case, `function_name` is `greet`, `arguments` is `name`, and the `function_body` is a simple print statement with string concatenation. You then call the `greet` function by passing it an argument `'John'`, which is assigned to the `name` parameter inside the function. This will output \"Hello John\" in the console."
+  },
+  {
+    "timestamp": "2025-06-12T10:27:38.492581",
+    "question": "def greet(name):\n    print('Hello ' + name)\ngreet('John')\n  ",
+    "answer": "<|user|>\ndef greet(name):\n    print('Hello ' + name)\ngreet('John')\n  \n<|assistant|>\nThis is a simple function called `greet` that takes a parameter `name` and prints a greeting message with the provided name.\n\nTo use this function, you can call it with the argument you want to pass. In the example above, we call the function `greet` with the string 'John' as an argument. This will execute the `print` statement inside the function with the name 'John' concatenated to the greeting message.\n\nThe output will be: `Hello John`"
+  },
+  {
+    "timestamp": "2025-06-16T08:41:25.640795",
+    "question": "class Node:\n    def __init__(self, data):\n        self.data = data\n        self.next = None\nclass LinkedList:\n    def __init__(self):\n        self.head = None\n\n    def insert(self, data):\n        new_n = Node(data)\n        if self.head is None:\n            self.head = new_n\n            return\n        curr_node = self.head\n        while curr_node.next:\n            curr_node = curr_node.next\n        curr_node.next = new_n\n\n    def find_a_node(self, key):\n        curr_node = self.head\n        index=0\n        while curr_node:\n            if curr_node.data == key:\n                return index\n            curr_node = curr_node.next\n            index+=1\n        return -1\n    \n    def display(self):\n        curr_node = self.head\n        if curr_node is None:\n            print(\"List is empty\")\n            return\n        while curr_node:\n            print(curr_node.data, end=\" \")\n            curr_node = curr_node.next\n        print()\n\no= LinkedList()\ndata = list(map(int, input().split()))\nfor i in data:\n    if i == -1:\n        break\n    o.insert(i)\nkey = int(input())\nindex= o.find_a_node(key)\nprint(index)",
+    "answer": "<|user|>\nclass Node:\n    def __init__(self, data):\n        self.data = data\n        self.next = None\nclass LinkedList:\n    def __init__(self):\n        self.head = None\n\n    def insert(self, data):\n        new_n = Node(data)\n        if self.head is None:\n            self.head = new_n\n            return\n        curr_node = self.head\n        while curr_node.next:\n            curr_node = curr_node.next\n        curr_node.next = new_n\n\n    def find_a_node(self, key):\n        curr_node = self.head\n        index=0\n        while curr_node:\n            if curr_node.data == key:\n                return index\n            curr_node = curr_node.next\n            index+=1\n        return -1\n    \n    def display(self):\n        curr_node = self.head\n        if curr_node is None:\n            print(\"List is empty\")\n            return\n        while curr_node:\n            print(curr_node.data, end=\" \")\n            curr_node = curr_node.next\n        print()\n\no= LinkedList()\ndata = list(map(int, input().split()))\nfor i in data:\n    if i == -1:\n        break\n    o.insert(i)\nkey = int(input())\nindex= o.find_a_node(key)\nprint(index)\n<|assistant|>\nThe given code defines a singly linked list called `LinkedList` with a class named `Node`. It also includes various methods like `insert()` for adding a node at the end, `find_a_node()` for finding the index of a given node, and `display()` for displaying the list.\n\nFirst, the user enters a list of numbers separated by spaces. The program then iterates through the list and inserts each number into the linked list using the `insert()` function. If the user enters `-1`, the input is considered complete and the program moves on to the next operation.\n\nNext, the user is prompted to enter a key to search for in the linked list. The `find_a_node()` function is called with this key as an argument, and it returns the index of the node that contains the key.\n\nFinally, the program prints the index of the node found using `find_a_node()`. If the key is not present in the list, the function `find_a_node()` returns -1, which is propagated up to the main program. This implementation follows good coding style with clear function naming and appropriate commenting throughout the code."
+  },
+  {
+    "timestamp": "2025-06-16T08:42:05.454717",
+    "question": "class Node:\n    def __init__(self, data):\n        self.data = data\n        self.next = None\nclass LinkedList:\n    def __init__(self):\n        self.head = None\n\n    def insert(self, data):\n        new_n = Node(data)\n        if self.head is None:\n            self.head = new_n\n            return\n        curr_node = self.head\n        while curr_node.next:\n            curr_node = curr_node.next\n        curr_node.next = new_n\n\n    def find_a_node(self, key):\n        curr_node = self.head\n        index=0\n        while curr_node:\n            if curr_node.data == key:\n                return index\n            curr_node = curr_node.next\n            index+=1\n        return -1\n    \n    def display(self):\n        curr_node = self.head\n        if curr_node is None:\n            print(\"List is empty\")\n            return\n        while curr_node:\n            print(curr_node.data, end=\" \")\n            curr_node = curr_node.next\n        print()\n\no= LinkedList()\ndata = list(map(int, input().split()))\nfor i in data:\n    if i == -1:\n        break\n    o.insert(i)\nkey = int(input())\nindex= o.find_a_node(key)\nprint(index)",
+    "answer": "<|user|>\nclass Node:\n    def __init__(self, data):\n        self.data = data\n        self.next = None\nclass LinkedList:\n    def __init__(self):\n        self.head = None\n\n    def insert(self, data):\n        new_n = Node(data)\n        if self.head is None:\n            self.head = new_n\n            return\n        curr_node = self.head\n        while curr_node.next:\n            curr_node = curr_node.next\n        curr_node.next = new_n\n\n    def find_a_node(self, key):\n        curr_node = self.head\n        index=0\n        while curr_node:\n            if curr_node.data == key:\n                return index\n            curr_node = curr_node.next\n            index+=1\n        return -1\n    \n    def display(self):\n        curr_node = self.head\n        if curr_node is None:\n            print(\"List is empty\")\n            return\n        while curr_node:\n            print(curr_node.data, end=\" \")\n            curr_node = curr_node.next\n        print()\n\no= LinkedList()\ndata = list(map(int, input().split()))\nfor i in data:\n    if i == -1:\n        break\n    o.insert(i)\nkey = int(input())\nindex= o.find_a_node(key)\nprint(index)\n<|assistant|>\nThe given code defines a linked list data structure using Python classes. It includes classes for nodes and linked lists. The `LinkedList` class has methods for inserting data, finding a node with a specific key, and displaying the list. The `Node` class has a constructor for initializing a node with data and a reference to the next node. \n\nHere's a brief overview of the code:\n\n1. Define a class `Node` for each node in the linked list\n   - `data`: To store the actual data of the node\n   - `next`: To store the pointer to the next node in the list\n\n2. Define the `LinkedList` class to represent the linked list\n   - `head`: Pointer to the first node in the list\n\n3. Insert operation:\n   - Create a new node with the given data\n   - If the list is empty, set the head to the new node\n   - Else, traverse the list until the end and attach the new node to it\n\n4. Search Operation:\n   - Traverse the list starting from the head\n   - Keep track of the index\n   - If the key is found, return the index\n   - If the end of the list is reached, return -1\n\n5. Display operation:\n   - Start from the head of the list\n   - Keep traversing till the end of the list\n   - Print each data element of the nodes encountered\n\n6. Test Code:\n   - Take input from the user\n   - Create a linked list and insert elements using the `insert` method\n   - Search for a specific element using the `find_a_node` method\n   - Display the content of the list.\n\nNote: This implementation doesn't check for duplicate elements. If it's necessary, additional logic will be required to handle duplicates."
+  },
+  {
+    "timestamp": "2025-06-16T08:43:17.303647",
+    "question": "#include<stdio.h>\nint main(){\nprintf(\"Hello World\");\nreturn 0;\n}",
+    "answer": "<|user|>\n#include<stdio.h>\nint main(){\nprintf(\"Hello World\");\nreturn 0;\n}\n<|assistant|>\nThis program is a simple C program that prints the message \"Hello World\" on the console. The `printf()` function is used to display the message, and the submitted string is enclosed in double quotes. The `return` statement is used to indicate the successful execution of the program, and the value returned is 0. This program does not take any user input or perform any complex operations; it is simply a basic hello world program to demonstrate how to write C code."
+  },
+  {
+    "timestamp": "2025-06-16T08:46:24.435716",
+    "question": "import java.util.*;\npublic static void main(String args[]){\nSystem.out.println(\"Hello World\");\n}",
+    "answer": "<|user|>\nimport java.util.*;\npublic static void main(String args[]){\nSystem.out.println(\"Hello World\");\n}\n<|assistant|>\nThis is a simple Java program that prints \"Hello World\" when executed. The `public class Main` class is created with the `main` method, which is the entry point of the program. The `println` method of the `System.out` class is used to print the string \"Hello World\". The `String[]` parameter `args` provided in the method signature is a traditional Java syntax for specifying the command-line arguments passed to the program, but in this case, it is not used."
+  },
+  {
+    "timestamp": "2025-06-16T08:46:53.512125",
+    "question": "import java.util.*;\npublic static void main(String args[]){\nSystem.out.println(\"Hello World\"\n}",
+    "answer": "<|user|>\nimport java.util.*;\npublic static void main(String args[]){\nSystem.out.println(\"Hello World\"\n}\n<|assistant|>\nThis is a simple Java program that displays the text \"Hello World\" when the program executes. The code is written in a class called \"Classname\" which is implicitly present as it is not explicitly mentioned. The main() method is called when the program is executed, and it contains a System.out.println() statement to display the given text. This program does not take any input and does not perform any calculations, but it demonstrates the basic syntax and structure of a Java application."
+  },
+  {
+    "timestamp": "2025-06-16T08:47:33.640343",
+    "question": "Hi , Hello",
+    "answer": "<|user|>\nHi , Hello\n<|assistant|>\nGreetings, how may I assist you today? Please let me know your query or command.\n\nHi and Hello are both simple phrases used to greet others. They are often used as an informal and casual way of saying hello. \"Hi\" is commonly used in casual settings such as among friends, family, and colleagues, while \"Hello\" is more formal and widely used in professional settings when meeting strangers or in more traditional scenarios. However, both expressions can be used interchangeably in various situations depending on the speaker's preference and context."
+  },
+  {
+    "timestamp": "2025-06-27T17:28:49.729916",
+    "question": "def greet(name):\n    print('Hello ' + name)\ngreet('John')\n  ",
+    "answer": "<|user|>\ndef greet(name):\n    print('Hello ' + name)\ngreet('John')\n  \n<|assistant|>\nThis is a simple Python function called `greet` that takes a single argument `name`, which represents the name of the person you want to greet.\n\nWhen the function is called, it concatenates 'Hello' and the given name and prints it to the console using the `print()` function.\n\nIn the example usage, we are calling the `greet()` function and passing the argument 'John' to it. This will print 'Hello John' to the console. You can replace 'John' with any other name you like when calling the function."
+  },
+  {
+    "timestamp": "2025-06-27T17:31:04.939435",
+    "question": "#include<stdio.h>\n#include<conio.h>\nint main()\n{\nint a=5,b=10;\nsum = a+b;\nprintf(\"sum: %d\", sum);\nreturn 0;\n}\n",
+    "answer": "<|user|>\n#include<stdio.h>\n#include<conio.h>\nint main()\n{\nint a=5,b=10;\nsum = a+b;\nprintf(\"sum: %d\", sum);\nreturn 0;\n}\n\n<|assistant|>\nThis program defines two integer variables `a` and `b` and assigns them values of `5` and `10`, respectively. It then calculates the sum of `a` and `b` by using the addition operator `+` and stores the result in a variable `sum`. The `printf()` function is used to display the value of the `sum` variable to the user. Finally, the `return` statement is used to indicate that the program has executed successfully. Overall, this program demonstrates basic variables and arithmetic operations using the C programming language."
+  },
+  {
+    "timestamp": "2025-06-30T08:36:36.260714",
+    "question": "def greet(name):\n    print('Hello ' + name)\ngreet('John')\n  ",
+    "answer": "<|user|>\ndef greet(name):\n    print('Hello ' + name)\ngreet('John')\n  \n<|assistant|>\nThis is a simple Python function named `greet` that takes a single argument `name`. Inside the function, we print a greeting message using string concatenation where the name is inserted inside quotes and then concatenated with the message. The function is then called externally with the argument `'John'` and the greeting message is printed. This function can be used to greet different users by passing their names as arguments."
+  },
+  {
+    "timestamp": "2025-06-30T08:37:17.724934",
+    "question": "#include<stdio.h>\nint main(){\nprintf(\"Hello World\");\nreturn 0;\n}",
+    "answer": "<|user|>\n#include<stdio.h>\nint main(){\nprintf(\"Hello World\");\nreturn 0;\n}\n<|assistant|>\nThis is a simple C program that prints the string \"Hello World\" using printf() function and returns 0 to indicate successful execution. The program is enclosed in a function main() which is called when the program is run. In C, the entry point of an executable program is always the main() function."
+  },
+  {
+    "timestamp": "2025-06-30T08:37:50.097141",
+    "question": "a=2\nb=5\nprint(a+b)",
+    "answer": "<|user|>\na=2\nb=5\nprint(a+b)\n<|assistant|>\nOutput: 7 (This is the output when you run the provided code snippet in Python. The code adds the values of variables `a` and `b` and prints the result using the `print()` function.)"
+  },
+  {
+    "timestamp": "2025-06-30T08:38:27.093219",
+    "question": "print(\"#\")",
+    "answer": "<|user|>\nprint(\"#\")\n<|assistant|>\nHere's the Python code to print the hash symbol (`#`) repeatedly:\n\n```python\n# This program prints multiple hash symbols\n\nnum = int(input(\"Enter the number of hash symbols to print: \"))\n\nfor I in range(num):\n    print(\"#\")\n```\n\nThe above code begins by requesting the user to input the number of hash symbols to print. Then, a `for` loop executes `num` number of times, with each iteration printing a hash symbol (`#`) using the `print()` function.\n\nYou can replace `num` with a number of your choice to print more or fewer hash symbols as required."
+  },
+  {
+    "timestamp": "2025-07-29T17:29:58.510661",
+    "question": "hello hi\n",
+    "answer": "\u274c AI failed to respond. Check backend logs or HuggingFace token."
+  },
+  {
+    "timestamp": "2025-07-29T17:41:44.228788",
+    "question": "hello",
+    "answer": "\u274c AI failed to respond. Check backend logs or HuggingFace token."
+  },
+  {
+    "timestamp": "2025-07-29T17:43:25.581470",
+    "question": "def greet(name):\n    print('Hello ' + name)\ngreet('John')\n  ",
+    "answer": "\u274c AI failed to respond. Check backend logs or HuggingFace token."
+  },
+  {
+    "timestamp": "2025-07-29T17:44:14.089461",
+    "question": "def greet(name):\n    print('Hello ' + name)\ngreet('John')\n  ",
+    "answer": "\u274c AI failed to respond. Check backend logs or HuggingFace token."
+  },
+  {
+    "timestamp": "2025-07-29T17:44:20.163816",
+    "question": "def greet(name):\n    print('Hello ' + name)\ngreet('John')\n  ",
+    "answer": "\u274c AI failed to respond. Check backend logs or HuggingFace token."
+  },
+  {
+    "timestamp": "2025-07-29T17:44:21.263563",
+    "question": "def greet(name):\n    print('Hello ' + name)\ngreet('John')\n  ",
+    "answer": "\u274c AI failed to respond. Check backend logs or HuggingFace token."
+  },
+  {
+    "timestamp": "2025-07-29T17:44:22.223594",
+    "question": "def greet(name):\n    print('Hello ' + name)\ngreet('John')\n  ",
+    "answer": "\u274c AI failed to respond. Check backend logs or HuggingFace token."
+  },
+  {
+    "timestamp": "2025-07-29T18:12:08.943197",
+    "question": "def greet(name):\n    print('Hello ' + name)\ngreet('John')\n  ",
+    "answer": "\u274c AI failed to respond. Check backend logs or HuggingFace token."
+  },
+  {
+    "timestamp": "2025-07-29T18:15:47.354508",
+    "question": "def greet(name):\n    print('Hello ' + name)\ngreet('John')\n  ",
+    "answer": "\u274c AI failed to respond. Check backend logs or HuggingFace token."
+  },
+  {
+    "timestamp": "2025-07-29T18:19:20.884395",
+    "question": "def greet(name):\n    print('Hello ' + name)\ngreet('John')\n  ",
+    "answer": "\u274c AI failed to respond. Check backend logs or HuggingFace token."
+  },
+  {
+    "timestamp": "2025-07-29T18:49:58.731895",
+    "question": "def greet(name):\n    print('Hello ' + name)\ngreet('John')\n  ",
+    "answer": "\u274c AI failed to respond. Check backend logs or HuggingFace token."
+  },
+  {
+    "timestamp": "2025-07-29T18:51:28.839371",
+    "question": "def greet(name):\n    print('Hello ' + name)\ngreet('John')\n  ",
+    "answer": "\u274c AI failed to respond. Check backend logs or HuggingFace token."
+  }
+]
