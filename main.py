@@ -5,7 +5,7 @@ import json
 import requests
 import os
 
-# Handle replit auth import with fallback
+# Handle Replit auth import with fallback
 try:
     from replit import auth
     REPLIT_AUTH_AVAILABLE = True
@@ -15,35 +15,59 @@ except ImportError:
 app = Flask(__name__)
 CORS(app)
 
-# Hugging Face model endpoint
-headers = {"Authorization": f"Bearer {os.environ.get('HF_TOKEN')}"}
+# Hugging Face API Token
+HF_TOKEN = os.environ.get("HF_TOKEN")
+headers = {"Authorization": f"Bearer {HF_TOKEN}"}
 
 
 def ask_code_mentor(prompt, model_name):
-    payload = {
-        "inputs": f"<|user|>\n{prompt}\n<|assistant|>\n",
-        "options": {
-            "wait_for_model": True
+    # Format payload depending on model type
+    if "zephyr" in model_name.lower():
+        payload = {
+            "inputs": [
+                {"role": "system", "content": "You are a helpful coding mentor."},
+                {"role": "user", "content": prompt}
+            ],
+            "options": {"wait_for_model": True}
         }
-    }
+    else:
+        # Mistral and other instruct models expect plain text
+        payload = {
+            "inputs": prompt,
+            "options": {"wait_for_model": True}
+        }
 
     model_url = f"https://api-inference.huggingface.co/models/{model_name}"
 
-    # DEBUG LOGGING
     print(f"📡 Request to: {model_url}")
     print(f"📤 Headers: {headers}")
     print(f"📄 Payload: {payload}")
 
-    response = requests.post(model_url, headers=headers, json=payload)
-
-    print("🔽 Status Code:", response.status_code)
-    print("🧾 Response Text:", response.text)
-
     try:
-        return response.json()[0]['generated_text']
+        response = requests.post(model_url, headers=headers, json=payload)
+        print("🔽 Status Code:", response.status_code)
+        print("🧾 Response Text:", response.text)
+
+        # Return Hugging Face errors clearly
+        if response.status_code != 200:
+            return f"❌ HF API Error {response.status_code}: {response.text}"
+
+        data = response.json()
+
+        # Zephyr returns a list of messages
+        if isinstance(data, list):
+            if "generated_text" in data[0]:
+                return data[0]["generated_text"]
+            elif "content" in data[-1]:
+                return data[-1]["content"]
+
+        # Mistral usually returns generated_text
+        if isinstance(data, dict) and "generated_text" in data:
+            return data["generated_text"]
+
+        return str(data)  # fallback
     except Exception as e:
-        print("❌ ERROR parsing response:", e)
-        return "❌ AI failed to respond. Check backend logs or HuggingFace token."
+        return f"❌ Exception: {str(e)}"
 
 
 @app.route("/")
@@ -51,12 +75,12 @@ def home():
     return render_template("test.html")
 
 
-@app.route('/ask', methods=['POST'])
+@app.route("/ask", methods=["POST"])
 def ask():
     if REPLIT_AUTH_AVAILABLE:
         try:
             user = auth.get_user()
-            username = user['username']
+            username = user["username"]
         except:
             username = "anonymous"
     else:
@@ -64,8 +88,8 @@ def ask():
     print(f"🔐 User asking: {username}")
 
     data = request.get_json()
-    question = data.get('question')
-    model = data.get('model')
+    question = data.get("question")
+    model = data.get("model")
 
     answer = ask_code_mentor(question, model)
 
@@ -99,7 +123,7 @@ def get_history():
     if REPLIT_AUTH_AVAILABLE:
         try:
             user = auth.get_user()
-            username = user['username']
+            username = user["username"]
         except:
             username = "anonymous"
     else:
@@ -116,11 +140,5 @@ def get_history():
 
 
 if __name__ == "__main__":
-    print("✅ Testing AI backend...")
-    print(
-        ask_code_mentor("def greet(name): print('Hello ' + name)",
-                        "HuggingFaceH4/zephyr-7b-beta"))
-import os
-port = int(os.environ.get("PORT", 5000))
-app.run(host="0.0.0.0", port=port)
-
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
