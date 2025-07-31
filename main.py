@@ -2,7 +2,7 @@ def ask_code_mentor(prompt, model_name):
     # Map model names to your HF Space URLs
     model_urls = {
         "zephyr": "https://chakri1211-zephyr-api.hf.space",
-        "mistral": "https://yourusername-mistral-api.hf.space"
+        "mistral": "https://chakri1211-mistral-api.hf.space"
     }
 
     # Pick the correct Space endpoint
